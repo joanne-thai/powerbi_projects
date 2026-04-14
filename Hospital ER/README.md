@@ -1,88 +1,77 @@
-# Healthcare ER Analytics Dashboard (Power BI)
+![Hospital ER hero](./images/hero.png)
+
+# Emergency Room Operations Analytics
+
+Understanding patient flow, waiting times, and referral patterns to improve ER operations.
+
+[![Open Interactive Power BI Report](https://img.shields.io/badge/Open-Interactive%20Power%20BI-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiYzgzYTQ2ZmItYTJiZS00NGFkLWI3ZjgtYzVlOWZjZDY1MDFkIiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9)
+[![Open PBIX File](https://img.shields.io/badge/Open-PBIX%20File-2F855A?style=for-the-badge)](./hospital_er_project.pbix)
+[![Back to All Projects](https://img.shields.io/badge/Back-All%20Projects-4C51BF?style=for-the-badge)](../README.md)
+
+> GitHub does not support live Power BI iframes inside README files, so the dashboard preview below links out to the interactive report.
+
+## At a Glance
+
+| Area | Details |
+| --- | --- |
+| Business problem | Clarify when ER demand peaks, how patient experience behaves, and which referral pathways create the most operational pressure. |
+| Dataset scope | 9,216 patient visits from April 2019 to October 2020 with timing, waiting time, satisfaction, demographics, admissions, and referrals. |
+| Tools | Power BI, DAX, Data Modelling, Data Visualization |
+| Analysis focus | Time-series analysis, operational flow analysis, correlation analysis, demographic segmentation |
+
+## Dashboard Preview
+
+[![Hospital ER dashboard preview](./images/dashboard-preview.png)](https://app.powerbi.com/view?r=eyJrIjoiYzgzYTQ2ZmItYTJiZS00NGFkLWI3ZjgtYzVlOWZjZDY1MDFkIiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9)
 
 ## Overview
 
-This project presents an end-to-end analysis of Emergency Room (ER) operations using Power BI, focusing on patient flow, operational efficiency, and patient experience. The dataset captures patient-level interactions over time, enabling a comprehensive evaluation of healthcare service performance.
+This project analysed emergency room operations to surface demand patterns, patient experience drivers, and workflow bottlenecks across more than a year of patient visits.
 
-The analysis reveals consistent demand patterns and highlights key operational challenges, while also identifying opportunities to improve efficiency and enhance patient experience.
+## Business Problem
 
----
-
-## Objectives
-
-The objective of this project is to transform patient-level data into actionable insights. The dashboard aims to analyse ER demand patterns, evaluate waiting time and satisfaction, understand patient demographics and referral behaviour, and support data-driven improvements in healthcare operations.
-
----
+The ER needed a clearer operational picture of when demand peaked, how waiting time related to satisfaction, and which patient groups and referral pathways created the most pressure on service delivery.
 
 ## Dataset
 
-The dataset spans **April 2019 to October 2020**, covering **9,216 patient visits**. During this period, the ER maintained steady demand, with an average waiting time of approximately **35 minutes** and an average satisfaction score of **5.47 out of 10**.
+The dataset spans April 2019 to October 2020 and includes 9,216 patient visits. It captures visit timing, admission status, waiting time, satisfaction score, patient demographics, and referral activity, modelled with a main `Hospital ER` table supported by `DimDate` and `DimTime`.
 
-Approximately **3,816 patients were referred to departments**, while the majority of cases were handled without escalation. Admissions are evenly distributed, with around half of patients admitted for further treatment.
+## Approach
 
----
-
-## Data Model
-
-The project uses a simplified modelling approach centred on a single fact table, `Hospital ER`, supported by `DimDate` and `DimTime`. Given the relatively small and flat structure of the dataset, demographic and categorical attributes were retained within the main table to reduce complexity while maintaining analytical flexibility.
-
-This structure supports efficient calculation of operational metrics and enables analysis across time, patient groups, and referral categories.
-
----
+- Built operational KPIs in Power BI to track patient volume, waiting time, satisfaction, admissions, and referral counts.
+- Used time-based analysis to identify demand peaks by weekday and hour.
+- Segmented patients by age, gender, and referral outcome to understand service mix and escalation patterns.
+- Tested the relationship between waiting time and satisfaction using patient-level correlation analysis.
 
 ## Key Insights
 
-ER demand remains relatively consistent across the analysis period, indicating a stable flow of patient visits rather than highly seasonal or irregular patterns. Demand peaks on Mondays, followed by Tuesdays and Saturdays, with the busiest periods occurring during midday and evening hours. This suggests that operational pressure is predictable and can be planned for more effectively.
-
-The average waiting time remains around **35 minutes**, while the average satisfaction score is **5.47 out of 10**, indicating a moderate patient experience. However, patient-level correlation analysis shows **almost no linear relationship (-0.002)** between waiting time and satisfaction. This suggests that delays alone do not explain patient experience, and that other factors such as communication, care quality, and treatment outcomes likely have a greater influence.
-
-A large proportion of patients do not require referrals, indicating that many ER visits involve non-critical conditions. Among referred cases, General Practice and Orthopedics handle the highest volumes, highlighting their importance within the escalation pathway.
-
-From a demographic perspective, the ER primarily serves the working-age population, with the highest concentration of patients between **20 and 39 years old**. Gender distribution is balanced, and the dataset reflects a diverse patient population, although some demographic information is not disclosed.
-
-Admissions are split almost evenly between admitted and non-admitted patients, indicating a balanced triage system in which roughly half of cases require further medical attention.
-
----
-
-## Dashboard Features
-
-The dashboard is designed to provide both operational and patient experience perspectives. The main overview presents patient volume, waiting time, satisfaction, referral activity, and temporal demand patterns. Additional views highlight patient demographics, department performance, and the relationship between waiting time and satisfaction.
-
-Interactive slicers support exploration by date, patient groups, and operational categories, allowing flexible analysis of ER performance.
-
----
-
-## Techniques Used
-
-This project applies time-based analysis, demographic segmentation, referral distribution analysis, and patient-level correlation analysis. DAX is used to calculate KPIs, operational measures, and satisfaction-related metrics.
-
-The dashboard design emphasises clarity and interpretability, with visuals chosen to support both high-level performance monitoring and deeper analytical exploration.
-
----
+- Demand is steady across the period, with the busiest periods occurring on Mondays and during midday to evening hours.
+- Average waiting time is about 35 minutes and average satisfaction is 5.47 out of 10, but waiting time alone shows almost no linear relationship with satisfaction.
+- Most visits do not require referrals, while General Practice and Orthopedics account for the largest share of referred cases.
 
 ## Recommendations
 
-Operational resources should be better aligned with peak demand periods, particularly during midday and early weekdays, to reduce congestion and improve patient flow.
+- Align staffing and operational resources more closely to midday and early-week demand peaks.
+- Introduce or expand fast-track pathways for non-critical patients to reduce congestion and improve flow.
+- Improve patient experience through clearer communication and service consistency, not just shorter wait times.
 
-Given that many visits do not require specialist referrals, introducing fast-track pathways for non-critical cases could improve efficiency and reduce pressure on ER resources.
-
-Since waiting time shows little correlation with satisfaction at the patient level, improvement efforts should extend beyond speed alone and focus more broadly on communication, care quality, and transparency in the patient experience.
-
-Variations in referral activity and department performance also suggest opportunities to standardise practices and improve consistency across service pathways.
-
----
-
-## Conclusion
-
-This project demonstrates how patient-level operational data can be transformed into actionable healthcare insights. By combining data modelling, performance analysis, and effective visualisation, the dashboard provides a clear view of ER demand, service efficiency, and patient experience.
-
-The findings highlight both the strengths of the current system and the areas where operational and experiential improvements can be made, supporting more informed healthcare decision making.
-
----
-
-## Tools & Technologies
+## Tools Used
 
 - Power BI
-- DAX (Data Analysis Expressions)
+- DAX
 - Data Modelling
-- Data Visualisation
+- Data Visualization
+
+## Project Visuals
+
+| Cover | Dashboard |
+| --- | --- |
+| ![Hospital ER cover](./images/hero.png) | ![Hospital ER dashboard](./images/dashboard-preview.png) |
+
+## Repository Contents
+
+| File | Purpose |
+| --- | --- |
+| [`hospital_er_project.pbix`](./hospital_er_project.pbix) | Power BI dashboard file |
+| [`Hospital ER.csv`](./Hospital%20ER.csv) | Source dataset used for analysis |
+| [`images/hero.png`](./images/hero.png) | Project cover image used in the README |
+| [`images/dashboard-preview.png`](./images/dashboard-preview.png) | Dashboard screenshot preview |

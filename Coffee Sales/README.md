@@ -1,82 +1,77 @@
-# ☕ Coffee Sales Dashboard (Power BI)
+![Coffee Sales hero](./images/hero.png)
+
+# Coffee Sales Analytics: Pricing, Demand & Product Insights
+
+Pinpointing which pricing and category shifts could unlock revenue growth across stores.
+
+[![Open Interactive Power BI Report](https://img.shields.io/badge/Open-Interactive%20Power%20BI-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiNzlmYjhiMGItMjBkZC00ZGQ1LTgzODgtNjAzYWI2NDQyNTU5IiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9)
+[![Open PBIX File](https://img.shields.io/badge/Open-PBIX%20File-2F855A?style=for-the-badge)](./coffee_sales_project.pbix)
+[![Back to All Projects](https://img.shields.io/badge/Back-All%20Projects-4C51BF?style=for-the-badge)](../README.md)
+
+> GitHub does not support live Power BI iframes inside README files, so the dashboard preview below links out to the interactive report.
+
+## At a Glance
+
+| Area | Details |
+| --- | --- |
+| Business problem | Understand which products, pricing patterns, and operating periods are driving store-level sales performance. |
+| Dataset scope | Multi-store transactional sales with product, quantity, price, timestamp, and location data. |
+| Tools | Power BI, Python, Excel, DAX |
+| Analysis focus | EDA, trend analysis, pricing strategy, demand analysis, product segmentation, KPI design |
+
+## Dashboard Preview
+
+[![Coffee Sales dashboard preview](./images/dashboard-preview.png)](https://app.powerbi.com/view?r=eyJrIjoiNzlmYjhiMGItMjBkZC00ZGQ1LTgzODgtNjAzYWI2NDQyNTU5IiwidCI6IjhiNmM0ZDY5LTc5OTMtNDgyYy04OGU5LTZmOWM5ZjlhMDBiOSJ9)
 
 ## Overview
 
-This project presents an end-to-end analysis of coffee shop sales performance using Power BI, focusing on revenue drivers, pricing dynamics, product performance, and time-based demand patterns. The dataset captures transactional data across multiple store locations, product categories, and time periods, enabling a comprehensive evaluation of business performance.
+This project transformed coffee shop transaction data into a decision-ready view of revenue drivers, product performance, pricing behaviour, and time-based demand patterns across multiple store locations.
 
-The analysis shows that the business is driven by a strong core of high-performing products and consistent daily demand, while also revealing opportunities to optimise product mix, pricing strategy, and time-based sales performance.
+## Business Problem
 
----
-
-## Objectives
-
-The goal of this project is to transform raw transactional data into actionable business insights. The dashboard aims to identify key revenue drivers, understand customer purchasing behaviour, evaluate product performance, and uncover operational patterns that can support data-driven decision making.
-
----
+The business needed a clearer view of which products, pricing patterns, and operating periods were driving sales performance. Leadership wanted to understand where revenue was concentrated, where demand was sensitive to price, and how store-level performance differed across locations and time windows.
 
 ## Dataset
 
-The dataset contains sales transactions across multiple stores, including information on product details, pricing, quantities sold, order timestamps, and store locations. It enables analysis across several dimensions such as product category, time, and geography.
+The dataset contains transactional sales across multiple stores, including product details, quantities sold, unit prices, timestamps, and store locations. A star schema model was built around a central fact table with supporting product, store, date, and time dimensions, plus a derived product summary table for segmentation analysis.
 
-Key metrics derived from the dataset include total sales, total orders, total quantity sold, and average unit price.
+## Approach
 
----
-
-## Data Model
-
-The project follows a structured data modelling approach using a star schema. The central fact table (`fact_Sales`) captures transactional data, including sales amount, quantity, and unit price. This is supported by dimension tables such as `dim_Product`, `dim_Store`, `dim_Date`, and `dim_Time`, which provide descriptive attributes for analysis.
-
-A derived `Product Summary` table is used for advanced analysis such as product segmentation and correlation calculations. This enables efficient evaluation of product performance and supports visuals such as scatter plots and portfolio classification.
-
----
+- Modelled the data using a star schema with `fact_Sales` supported by product, store, date, and time dimensions.
+- Built DAX measures for sales, orders, quantity sold, average unit price, and other comparative KPIs.
+- Used correlation analysis and quadrant-style product segmentation to examine price, demand, and revenue relationships.
+- Designed three analytical views covering monthly performance, product insights, and sales drivers with short-term forecasting.
 
 ## Key Insights
 
-Revenue is highly concentrated in coffee and tea products, with a small number of top-performing items contributing the majority of total sales. This indicates a strong core product offering that drives business performance.
-
-Pricing exhibits a dual impact on performance. At the product level, higher prices are associated with lower demand, indicating price sensitivity among customers. However, at the store level, higher average pricing is strongly correlated with increased revenue, suggesting that premium pricing strategies remain effective overall.
-
-The product portfolio shows clear inefficiencies, as underperforming products still contribute a noticeable share of revenue despite lower performance. This highlights opportunities for optimisation through better product positioning and selection.
-
-Sales patterns are consistent and predictable. Demand is strongest during morning hours across all days, reflecting routine consumption behaviour, while evening periods show higher peak sales driven by occasional spikes. Overall, sales remain stable with a slight upward trend over time.
-
----
-
-## Dashboard Features
-
-The dashboard is structured into three main analytical views to support different levels of insight. The Monthly Overview provides a high-level summary of key performance indicators, sales trends, and operational patterns. The Product Performance page focuses on product-level insights, including category performance, demand behaviour, and sales contribution. The Sales Drivers & Forecast page highlights key revenue drivers, product segmentation, and short-term sales forecasting.
-
-Interactive slicers allow users to filter by date, store location, and product category, enabling flexible exploration of the data. Advanced visuals such as scatter plots, heatmaps, treemaps, and decomposition trees are used to present insights clearly and effectively.
-
----
-
-## Techniques Used
-
-This project applies a range of analytical and data modelling techniques to enhance insight quality. DAX is used extensively to calculate key metrics, growth rates, correlations, and custom aggregations. Correlation analysis is implemented to evaluate relationships between price, demand, and revenue. Product segmentation is performed using a quadrant-based approach to classify products into performance groups.
-
-Time-based analysis is used to identify peak demand periods and consumption patterns, while forecasting techniques are applied to project short-term sales trends. The dashboard design emphasises clarity, consistency, and visual hierarchy to improve user experience.
-
----
+- Revenue is highly concentrated in coffee and tea products, with a small set of top-performing items driving most sales.
+- Higher prices tend to reduce demand at the product level, but stores with higher average pricing still generate stronger revenue overall.
+- Sales are stable with a slight upward trend, with strongest demand in the morning and occasional evening sales spikes.
 
 ## Recommendations
 
-The analysis suggests that the product mix should be optimised by reviewing underperforming items for potential removal, repositioning, or bundling, while focusing resources on high-performing products. Pricing strategies should be maintained for strong-performing products, with targeted adjustments applied to weaker items to improve demand.
+- Focus product and promotional attention on high-performing core items while reviewing weaker products for removal, bundling, or repositioning.
+- Maintain pricing strength on leading products and test targeted pricing changes only on weaker items with softer demand.
+- Align staffing and inventory planning with peak morning demand and use targeted campaigns to capture evening sales opportunities.
 
-Growth opportunity products should be further developed through increased visibility and promotion, with the aim of converting them into stronger contributors. Operational efficiency can be improved by aligning staffing and inventory with peak morning demand and leveraging evening sales opportunities through targeted campaigns.
-
----
-
-## Conclusion
-
-This project demonstrates how data can be used to uncover meaningful insights into business performance and support strategic decision making. By combining data modelling, analytical techniques, and effective visualisation, the dashboard provides a clear and actionable view of sales performance across multiple dimensions.
-
-The results highlight both the strengths of the current business model and the opportunities for improvement, making this analysis a valuable tool for driving future growth.
-
----
-
-## Tools & Technologies
+## Tools Used
 
 - Power BI
-- DAX (Data Analysis Expressions)
-- Data Modelling (Star Schema)
-- Data Visualisation
+- Python
+- Excel
+- DAX
+
+## Project Visuals
+
+| Cover | Dashboard |
+| --- | --- |
+| ![Coffee Sales cover](./images/hero.png) | ![Coffee Sales dashboard](./images/dashboard-preview.png) |
+
+## Repository Contents
+
+| File | Purpose |
+| --- | --- |
+| [`coffee_sales_project.pbix`](./coffee_sales_project.pbix) | Power BI dashboard file |
+| [`data.xlsx`](./data.xlsx) | Source dataset used for analysis |
+| [`images/hero.png`](./images/hero.png) | Project cover image used in the README |
+| [`images/dashboard-preview.png`](./images/dashboard-preview.png) | Dashboard screenshot preview |
