@@ -44,9 +44,10 @@ The dataset contains transactional sales across multiple stores, including produ
 
 ## Key Insights
 
-- Revenue is highly concentrated in coffee and tea products, with a small set of top-performing items driving most sales.
-- Higher prices tend to reduce demand at the product level, but stores with higher average pricing still generate stronger revenue overall.
-- Sales are stable with a slight upward trend, with strongest demand in the morning and occasional evening sales spikes.
+- Coffee and tea products are the clear revenue engine of the business, with total revenue reaching about **$698.8K** from **149K orders** and **214K items sold**. A relatively small group of top-performing products drives most sales, while underperforming items still contribute roughly **15-20%** of revenue, pointing to clear product-mix inefficiency.
+- Pricing behaves differently depending on the level of analysis. At the product level, higher prices are associated with lower demand with a correlation of **-0.68**, showing meaningful price sensitivity; at the store level, higher average pricing is strongly linked to stronger revenue with a correlation of **0.93**, suggesting premium pricing can still work when the store mix and basket value are strong.
+- Demand patterns are highly routine, which makes them operationally useful. Sales stay fairly stable around the daily average of roughly **$3.9K-$5K**, morning periods are consistently strong across the week, and evening periods show occasional spikes that create additional upside rather than replacing core demand.
+- The business currently relies heavily on weekday traffic, with about **74%** of transactions happening on weekdays. Store performance is otherwise relatively balanced, which suggests the biggest growth opportunities are more about portfolio optimisation, promotion timing, and off-peak demand activation than fixing one weak location.
 
 ## Recommendations
 

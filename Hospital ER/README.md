@@ -44,9 +44,10 @@ The dataset spans April 2019 to October 2020 and includes 9,216 patient visits. 
 
 ## Key Insights
 
-- Demand is steady across the period, with the busiest periods occurring on Mondays and during midday to evening hours.
-- Average waiting time is about 35 minutes and average satisfaction is 5.47 out of 10, but waiting time alone shows almost no linear relationship with satisfaction.
-- Most visits do not require referrals, while General Practice and Orthopedics account for the largest share of referred cases.
+- The ER handled **9,216 patient visits** across a **19-month** period, with average waiting time at about **35 minutes** and average satisfaction at **5.47 out of 10**. This points to a consistently busy service with moderate patient experience and clear room to improve the operational journey.
+- Demand is steady rather than erratic, with the heaviest pressure falling on **Mondays**, followed by **Tuesdays** and **Saturdays**, and activity clustering around midday to evening hours. Because those peaks are predictable, staffing and flow interventions can be timed more precisely instead of treating congestion as random.
+- Waiting time on its own does not explain the experience gap as well as teams might expect. The report shows an almost zero linear relationship between waiting time and satisfaction at **-0.002**, which suggests communication, care quality, and treatment outcomes likely matter more than speed alone for many patients.
+- Referral activity shows that a large share of visits are relatively low-acuity, with roughly **5,400** patients needing no referral at all, while **General Practice (~1,800)** and **Orthopedics (~1,000)** handle the largest referred volumes. The patient base is concentrated in the **20-39** age range, gender split is balanced, and admissions are close to **50/50**, indicating a fairly even triage mix between patients who require further treatment and those who can be discharged.
 
 ## Recommendations
 

@@ -44,9 +44,11 @@ The dataset covers a full year of operations, generating about $817.9K in revenu
 
 ## Key Insights
 
-- Sales are stable through the year, with strongest performance during lunch hours and at the end of the week, especially Fridays.
-- Customers frequently buy multiple pizzas per order, with more than 60% of orders containing multiple items.
-- A small group of products drives most revenue, while several menu items and ingredients contribute little and create portfolio inefficiency.
+- The business generated approximately **$817.9K** in revenue from **21K orders** and **50K pizzas sold**, with an average order value of about **$38.3** and roughly **2 pizzas per order**. Sales are stable across the year with only minor fluctuations, which suggests a dependable business pattern rather than sharp seasonality.
+- Demand is concentrated in very specific trading windows. **Fridays** are the strongest sales day, followed by **Thursdays** and **Saturdays**, while the **12 PM - 3 PM** period drives the highest revenue and evening hours provide the next-largest contribution, making lunch and dinner the critical operating dayparts.
+- Order composition is a real commercial strength, not just a descriptive stat. Around **61.6%** of orders contain multiple pizzas, which confirms strong bundle-style purchasing behaviour and creates a solid case for combo offers, upselling, and promotions designed around multi-item baskets.
+- Category and product performance are uneven in ways that matter strategically. **Classic** pizzas lead both in volume and revenue at roughly **$220K**, while products such as **The Classic Deluxe Pizza** and **Barbecue Chicken Pizza** stand out against weaker items like **The Brie Carre Pizza** and **Mediterranean Pizza**, showing that menu breadth is not translating evenly into value.
+- Ingredient and menu-engineering analysis both point to portfolio inefficiency. High-usage ingredients such as **Garlic**, **Tomatoes**, and **Red Onions** dominate demand, while low-usage ingredients add complexity with limited payoff; at the same time, top performers contribute about **51.5%** of revenue while underperformers still account for about **37.5%**, reinforcing the need to simplify and rebalance the menu.
 
 ## Recommendations
 
