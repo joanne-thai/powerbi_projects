@@ -8,8 +8,6 @@ Understanding patient flow, waiting times, and referral patterns to improve ER o
 [![Open PBIX File](https://img.shields.io/badge/Open-PBIX%20File-2F855A?style=for-the-badge)](./hospital_er_project.pbix)
 [![Back to All Projects](https://img.shields.io/badge/Back-All%20Projects-4C51BF?style=for-the-badge)](../README.md)
 
-> GitHub does not support live Power BI iframes inside README files, so the dashboard preview below links out to the interactive report.
-
 ## At a Glance
 
 | Area | Details |

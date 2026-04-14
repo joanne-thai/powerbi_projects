@@ -8,7 +8,6 @@ Linking sales patterns, menu performance, and ingredient usage to smarter produc
 [![Open PBIX File](https://img.shields.io/badge/Open-PBIX%20File-2F855A?style=for-the-badge)](./pizza_sales_project.pbix)
 [![Back to All Projects](https://img.shields.io/badge/Back-All%20Projects-4C51BF?style=for-the-badge)](../README.md)
 
-> GitHub does not support live Power BI iframes inside README files, so the dashboard preview below links out to the interactive report.
 
 ## At a Glance
 
