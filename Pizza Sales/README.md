@@ -24,15 +24,35 @@ Linking sales patterns, menu performance, and ingredient usage to smarter produc
 
 ## Overview
 
-This project turned a full year of pizza sales transactions into a clear view of revenue drivers, customer order behaviour, menu efficiency, and operational demand patterns.
+This project analyses pizza sales data to understand customer ordering behaviour, product performance, and demand patterns over time. The focus is on identifying which products contribute most to sales, how ordering behaviour changes across different time periods, and how the menu can be optimised.
+
+The dataset consists of order-level and product-level information, including order date and time, pizza type, category, size, quantity, and revenue. It captures customer transactions across a full year, allowing analysis of both time-based trends and product performance.
 
 ## Business Problem
 
-The business needed to understand which products and categories were truly driving revenue, whether customer demand translated into value, and where menu and inventory inefficiencies were limiting performance.
+The business needs to answer several key questions:
+
+- Which pizzas and categories drive Total Revenue?  
+- When do customers place orders most frequently?  
+- How does demand vary across products?  
+- Which products should be improved, promoted, or removed?  
+
+Answering these questions helps improve menu design, pricing decisions, and overall sales performance.
+
 
 ## Dataset
 
 The dataset covers a full year of operations, generating about $817.9K in revenue from 21K orders and 50K pizzas sold. It includes product details, quantities, timestamps, and ingredient-level information, with derived summary tables supporting product, ingredient, and menu engineering analysis.
+
+## Data Model
+The dataset is structured using a snowflake schema, separating core entities into related tables:
+
+- Orders (order ID, date, time)  
+- Order Details (product, quantity, revenue)  
+- Pizzas (name, size, category)  
+- Pizza Types (ingredients, descriptions)  
+
+This structure reduces data redundancy and allows more flexible analysis across products, categories, and ingredients. 
 
 ## Approach
 
@@ -40,6 +60,78 @@ The dataset covers a full year of operations, generating about $817.9K in revenu
 - Analysed sales by daypart, weekday, category, and product to isolate stable demand patterns and peak periods.
 - Used menu engineering and demand-versus-revenue comparisons to classify product performance.
 - Evaluated ingredient concentration and low-usage components to identify inventory and procurement inefficiencies.
+
+## Key Metrics
+- Total Revenue: $817.9K  
+- Total Quantity Sold: 50K  
+- Total Orders: 21K  
+- Avg Order Value: $38.3  
+- Avg Pizza per Order: 2
+
+## Analysis
+
+### 1. Revenue & Sales Trends
+
+**Visuals Used:** Total Revenue (Line Chart), Monthly Heatmap  
+
+- Revenue remains relatively stable throughout the year, with moderate fluctuations. Some months (e.g. July) show higher performance, while others are slightly lower.
+- Sales do not show strong seasonality.
+
+**Impact:**  
+
+Growth is more likely to come from improving product performance rather than relying on seasonal demand.
+
+### 2. Sales by Day and Time
+
+**Visuals Used:** Sales by Day of Week, Sales by Time Slot  
+
+- Friday generates the highest revenue **(~$136K)**, followed by weekends. The peak time slot is **12–3 PM (~$277K)**, with strong demand also in the evening **(6–9 PM)**.
+- Customer demand is concentrated around **lunch** and **evening** periods, especially later in the week.
+
+**Impact:**  
+
+Operations and promotions should focus on these high-demand windows.
+
+### 3. Order Behaviour
+
+**Visuals Used:** Order Composition (Donut Chart)  
+
+- Multi-item orders account for **~61.6%** of all orders, while single-item orders make up **~38.4%**.
+- Customers frequently purchase more than one pizza per order.
+
+**Impact:**  
+
+There is strong potential to increase revenue through bundles and upselling.
+
+### 4. Category Performance
+
+**Visuals Used:** Category Ranking (by Revenue)  
+
+- **Classic pizzas** generate the highest revenue (~$220K), followed by Supreme (~$208K), Chicken (~$196K), and Veggie (~$194K).
+- Demand is relatively balanced across categories, with no single category dominating entirely.
+
+**Impact:**  
+
+A diversified product mix reduces risk but requires consistent performance across categories.
+
+### 5. Product-Level Performance
+
+**Visuals Used:** Bottom 5 Products (Revenue & Quantity), Product Tables  
+
+Several products consistently rank at the bottom in both revenue and quantity sold.  
+For example:
+
+- **Brie Carre Pizza** generates less than ~$12K in revenue and has one of the lowest order volumes  
+- **Mediterranean Pizza** and **Spinach Supreme** also show low demand, with fewer than ~1,000 units sold  
+- These products appear in both the bottom revenue and bottom quantity rankings  
+
+These items have weak demand and limited contribution.
+
+**Impact:**  
+
+Keeping these products on the menu may reduce efficiency by increasing ingredient complexity, slowing down operations, and taking attention away from higher-performing items. Therefore, these products should be reviewed for removal, repositioning, or improvement.
+
+
 
 ## Key Insights
 
