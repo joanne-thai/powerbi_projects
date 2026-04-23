@@ -45,6 +45,7 @@ Answering these questions helps improve menu design, pricing decisions, and over
 The dataset covers a full year of operations, generating about $817.9K in revenue from 21K orders and 50K pizzas sold. It includes product details, quantities, timestamps, and ingredient-level information, with derived summary tables supporting product, ingredient, and menu engineering analysis.
 
 ## Data Model
+
 The dataset is structured using a snowflake schema, separating core entities into related tables:
 
 - Orders (order ID, date, time)  
@@ -62,6 +63,7 @@ This structure reduces data redundancy and allows more flexible analysis across 
 - Evaluated ingredient concentration and low-usage components to identify inventory and procurement inefficiencies.
 
 ## Key Metrics
+
 - Total Revenue: $817.9K  
 - Total Quantity Sold: 50K  
 - Total Orders: 21K  
@@ -78,7 +80,6 @@ This structure reduces data redundancy and allows more flexible analysis across 
 - There is no strong seasonality pattern, and sales performance is fairly consistent over time.
 
 **Impact:**  
-
 Growth is more likely to come from improving product performance rather than relying on seasonal demand.
 
 ### 2. Sales by Day and Time
@@ -100,7 +101,6 @@ By time of day:
 Friday generates the highest revenue, followed by weekends. The peak time slot is **12–3 PM**, with strong demand also in the evening **(6–9 PM)**. Customer demand is concentrated around **lunch** and **evening** periods, especially later in the week.
 
 **Impact:**  
-
 Operations, staffing, and promotions should be focused on these peak periods to maximise revenue.
 
 ### 3. Order Behaviour
@@ -173,7 +173,6 @@ These products appear consistently in both bottom revenue and quantity rankings.
 These items have weak demand and low contribution.
 
 **Impact:**  
-
 Keeping these products on the menu may reduce efficiency by increasing ingredient complexity, slowing down operations, and taking attention away from higher-performing items. Therefore, these products should be reviewed for removal, repositioning, or improvement.
 
 ### 7. Ingredient Usage & Impact  
@@ -201,7 +200,6 @@ Keeping these products on the menu may reduce efficiency by increasing ingredien
 From the visuals, core ingredients are strongly associated with high-performing pizzas, while niche ingredients contribute little to demand.
 
 **Impact:**  
-
 Ingredient selection directly affects product popularity, cost efficiency, and menu complexity  
 
 ### 8. Product Segmentation (Revenue vs Demand)  
