@@ -44,6 +44,9 @@ Without this, it is difficult to make decisions around pricing, product focus, a
 The dataset contains transactional sales across multiple stores, including product details, quantities sold, unit prices, timestamps, and store locations. A star schema model was built around a central fact table with supporting product, store, date, and time dimensions, plus a derived product summary table for segmentation analysis.
 
 ## Approach
+<p align="center">
+  <img src="./images/data_model.png" width="500"/>
+</p>
 
 - Modelled the data using a star schema with `fact_Sales` supported by product, store, date, and time dimensions.
 - Built DAX measures for sales, orders, quantity sold, average unit price, and other comparative KPIs.
