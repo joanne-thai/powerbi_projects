@@ -64,7 +64,7 @@ The dataset contains transactional sales across multiple stores, including produ
 ### 1. Sales Distribution by Product
 **Visuals Used:** Sales by Products (Treemap), Ranking by Sales (Bar Chart)
 
-- Sales are unevenly distributed across products and categories. Coffee (~$269.9K) and Tea (~$196.4K) are the clear revenue engines of the business, with total revenue reaching about **$698.8K** from **149K orders** and **214K items sold**.
+- Sales are unevenly distributed across products and categories. Coffee (\~$269.9K) and Tea (\~$196.4K) are the clear revenue engines of the business, with total revenue reaching about **$698.8K** from **149K orders** and **214K items sold**.
 - A relatively small group of top-performing products drives most sales, while underperforming items still contribute roughly **15-20%** of revenue, pointing to clear product-mix inefficiency.
 
 This shows that a small number of categories drive most of the revenue.
