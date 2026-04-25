@@ -63,7 +63,10 @@ The dataset contains transactional sales across multiple stores, including produ
 
 ### 1. Sales Distribution by Product
 **Visuals Used:** Sales by Products (Treemap), Ranking by Sales (Bar Chart)
-
+<p align="center">
+  <img src="./images/sales_by_product.png" width="400"/>
+    <img src="images/ranking_by_sales.png" width="400"/>
+</p>
 - Sales are unevenly distributed across products and categories. Coffee (\~$269.9K) and Tea (\~$196.4K) are the clear revenue engines of the business, with total revenue reaching about **$698.8K** from **149K orders** and **214K items sold**.
 - A relatively small group of top-performing products drives most sales, while underperforming items still contribute roughly **15-20%** of revenue, pointing to clear product-mix inefficiency.
 
@@ -71,6 +74,10 @@ This shows that a small number of categories drive most of the revenue.
 
 ### 2. Customer Spending Behaviour
 **Visuals Used:** Quantity Sold by Category (Area Chart), Sales by Products (Treemap)
+<p align="center">
+  <img src="./images/quantity_sold_by_month_and_category.png" width="600"/>
+    <img src="images/sales_by_product.png" width="400"/>
+</p>
 
 - Categories with higher Total Sales also show higher Quantity Sold, especially Coffee and Tea.
 
@@ -78,6 +85,9 @@ This suggests that customers tend to repeatedly purchase the same core products,
 
 ### 3. Price vs Demand
 **Visual Used:** Price vs Demand (Scatter Plot)
+<p align="center">
+  <img src="./images/price_vs_demand corr.png" width="600"/>
+</p>
 
 Pricing behaves differently depending on the level of analysis.
 
