@@ -86,7 +86,7 @@ This suggests that customers tend to repeatedly purchase the same core products,
 ### 3. Price vs Demand
 **Visual Used:** Price vs Demand (Scatter Plot)
 <p align="center">
-  <img src="./images/price_vs_demand corr.png" width="600"/>
+  <img src="./images/price_vs_quantity_corr.png" width="500"/>
 </p>
 
 Pricing behaves differently depending on the level of analysis.
@@ -104,6 +104,10 @@ This does not mean that increasing the price leads to higher sales. Instead, hig
   
 ### 5. Product Positioning
 **Visuals Used:** Product Positioning (Scatter Plot), Menu Class Breakdown
+<p align="center">
+  <img src="./images/product_positioning.png" width="500"/>
+    <img src="images/menu_class_breakdown.png" width="400"/>
+</p>
 
 Products are grouped based on Total Sales and Quantity Sold:
 
@@ -116,6 +120,12 @@ Underperforming products contribute approximately $125.4K in Total Sales.
 
 ### 6. Sales Trend & Forecast
 **Visuals Used:** Sales Trend (Line Chart), Forecast
+<p align="center">
+  <img src="./images/sales_trend.png" width="1000"/>
+</p>
+<p align="center">
+  <img src="images/short-term_forecast.png" width="600"/>
+</p>
 
 Demand patterns are highly routine, which makes them operationally useful.
 
