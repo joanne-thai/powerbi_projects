@@ -74,7 +74,9 @@ This structure reduces data redundancy and allows more flexible analysis across 
 
 ### 1. Revenue & Sales Trends
 
-**Visuals Used:** Total Revenue (Line Chart), Monthly Heatmap  
+<p align="center">
+  <img src="./images/total_rev_by_month_daymonth.png" width="500"/>
+</p>
 
 - Revenue remains relatively stable throughout the year, with moderate fluctuations across months. Some months (e.g. July) show higher performance at approximately **~$75K–$78K**, while other months, such as February and October, are slightly lower at around **~$60K–$65K**.
 - There is no strong seasonality pattern, and sales performance is fairly consistent over time.
@@ -83,16 +85,20 @@ This structure reduces data redundancy and allows more flexible analysis across 
 Growth is more likely to come from improving product performance rather than relying on seasonal demand.
 
 ### 2. Sales by Day and Time
-
-**Visuals Used:** Sales by Day of Week, Sales by Time Slot  
-
 Sales are not evenly distributed across the week:
+
+<p align="center">
+  <img src="./images/sales_by_dayweek.png" width="400"/>
+</p>
 
 - **Friday** generates the highest revenue (~$136K)  
 - **Saturday and Sunday** also perform strongly (~$125K–$130K)  
 - Mid-week days such as Tuesday and Wednesday show lower performance (~$110K–$115K)
 
 By time of day:
+<p align="center">
+  <img src="./images/sales_by_timeslot.png" width="300"/>
+</p>
 
 - **Peak period:** 12 PM – 3 PM (~$277K total revenue)  
 - **Secondary peak:** 6 PM – 9 PM (~$240K–$250K)  
@@ -105,7 +111,9 @@ Operations, staffing, and promotions should be focused on these peak periods to 
 
 ### 3. Order Behaviour
 
-**Visuals Used:** Order Composition (Doughnut Chart)  
+<p align="center">
+  <img src="./images/order_composition.png" width="400"/>
+</p>
 
 - Multi-item orders: ~61.6%  
 - Single-item orders: ~38.4%  
@@ -118,7 +126,12 @@ There is strong potential to introduce bundles, encourage upselling, and increas
 
 ### 4. Category Performance
 
-Revenue is relatively balanced across categories:
+<p align="center">
+  <img src="./images/category_rank_quantity.png" width="400"/>
+      <img src="images/category_rank_rev.png" width="400"/>
+</p>
+
+While there are differences in Quantity Sold, Revenue is relatively balanced across categories:
 
 By quantity sold:
 - **Classic:** ~14.9K units (highest)  
@@ -136,7 +149,10 @@ Classic pizzas are likely core menu items that drive consistent demand and shoul
 
 ### 5. Top Performing Products  
 
-**Visuals Used:** Top 5 Products by Revenue, Top 5 Products by Quantity Sold  
+<p align="center">
+  <img src="./images/top_product_rev.png" width="400"/>
+      <img src="images/top_product_quantity.png" width="400"/>
+</p>
 
 **Top by Revenue:**
 
@@ -161,7 +177,10 @@ These pizzas are strong demand drivers and reliable revenue contributors. They s
 
 ### 6. Product-Level Performance (Underperformers) 
 
-**Visuals Used:** Bottom 5 Products (Revenue & Quantity)  
+<p align="center">
+  <img src="./images/bottom_product_rev.png" width="400"/>
+      <img src="images/bottom_product_quantity.png" width="400"/>
+</p>
 
 Examples of low-performing products:
 
@@ -177,7 +196,9 @@ Keeping these products on the menu may reduce efficiency by increasing ingredien
 
 ### 7. Ingredient Usage & Impact  
 
-**Visuals Used:** Top Used Ingredients, Least Used Ingredients, Ingredient Impact (Scatter Plot)  
+<p align="center">
+  <img src="./images/top-least_ingredients.png" width="600"/>
+</p>
 
 **Most Used Ingredients:**
 
@@ -193,6 +214,9 @@ Keeping these products on the menu may reduce efficiency by increasing ingredien
 - Pears: ~490  
 
 **Ingredient Impact (Revenue vs Demand):**
+<p align="center">
+  <img src="./images/ingredients_impact.png" width="500"/>
+</p>
 
 - Ingredients like **Garlic and Tomatoes** are positioned in the high-demand, high-revenue quadrant  
 - Ingredients like **Nduja Salami and Anchovies** are low demand and low revenue
@@ -204,7 +228,10 @@ Ingredient selection directly affects product popularity, cost efficiency, and m
 
 ### 8. Product Segmentation (Revenue vs Demand)  
 
-**Visuals Used:** Segmentation Scatter, Revenue Contribution by Segment  
+<p align="center">
+  <img src="./images/pizza_segmentation.png" width="610"/>
+      <img src="images/rev_contribution_by_segment.png" width="320"/>
+</p>
 
 - **Top Performers:** ~$421K (51.5%)  
 - **Growth Opportunities:** ~$105K (12.9%)  
