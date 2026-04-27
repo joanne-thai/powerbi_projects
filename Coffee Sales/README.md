@@ -44,6 +44,9 @@ Without this, it is difficult to make decisions around pricing, product focus, a
 The dataset contains transactional sales across multiple stores, including product details, quantities sold, unit prices, timestamps, and store locations. A star schema model was built around a central fact table with supporting product, store, date, and time dimensions, plus a derived product summary table for segmentation analysis.
 
 ## Approach
+<p align="center">
+  <img src="./images/data_model.png" width="500"/>
+</p>
 
 - Modelled the data using a star schema with `fact_Sales` supported by product, store, date, and time dimensions.
 - Built DAX measures for sales, orders, quantity sold, average unit price, and other comparative KPIs.
@@ -62,7 +65,7 @@ The dataset contains transactional sales across multiple stores, including produ
 ## Analysis
 
 ### 1. Sales Distribution by Product
-**Visuals Used:** Sales by Products (Treemap), Ranking by Sales (Bar Chart)
+
 <p align="center">
   <img src="./images/sales_by_product.png" width="400"/>
     <img src="images/ranking_by_sales.png" width="400"/>
@@ -73,7 +76,7 @@ The dataset contains transactional sales across multiple stores, including produ
 This shows that a small number of categories drive most of the revenue.
 
 ### 2. Customer Spending Behaviour
-**Visuals Used:** Quantity Sold by Category (Area Chart), Sales by Products (Treemap)
+
 <p align="center">
   <img src="./images/quantity_sold_by_month_and_category.png" width="600"/>
     <img src="images/sales_by_product.png" width="400"/>
@@ -84,7 +87,7 @@ This shows that a small number of categories drive most of the revenue.
 This suggests that customers tend to repeatedly purchase the same core products, and revenue is driven by frequent purchases rather than one-time orders.
 
 ### 3. Price vs Demand
-**Visual Used:** Price vs Demand (Scatter Plot)
+
 <p align="center">
   <img src="./images/price_vs_quantity_corr.png" width="500"/>
 </p>
@@ -96,14 +99,17 @@ Pricing behaves differently depending on the level of analysis.
 This shows that customers buy less as prices increase, indicating price sensitivity across products.
 
 ### 4. Sales & Avg Unit Price Correlation by Store
-**Visual Used:** Sales & Avg Unit Price Correlation by Store
+
+<p align="center">
+  <img src="./images/store-level_price_vs_quantity_corr.png" width="500"/>
+</p>
 
 - At the store level, there is a strong positive relationship (correlation = 0.93) between Avg Unit Price and Total Sales.
 
 This does not mean that increasing the price leads to higher sales. Instead, higher-performing stores tend to have higher average prices, likely due to stronger demand, location differences, or product mix.
   
 ### 5. Product Positioning
-**Visuals Used:** Product Positioning (Scatter Plot), Menu Class Breakdown
+
 <p align="center">
   <img src="./images/product_positioning.png" width="500"/>
     <img src="images/menu_class_breakdown.png" width="400"/>
@@ -119,7 +125,7 @@ Products are grouped based on Total Sales and Quantity Sold:
 Underperforming products contribute approximately $125.4K in Total Sales.
 
 ### 6. Sales Trend & Forecast
-**Visuals Used:** Sales Trend (Line Chart), Forecast
+
 <p align="center">
   <img src="./images/sales_trend.png" width="1000"/>
 </p>
