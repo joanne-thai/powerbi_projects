@@ -79,7 +79,6 @@ The ER handles an almost perfectly balanced split between admitted and non-admit
 - And a general treatment centre (non-admissions)  
 
 **Impact:**  
-
 This mix increases operational complexity, as different patient types require different levels of time, resources, and prioritisation.
 
 ### 2. Waiting Time Performance
@@ -95,7 +94,6 @@ A significant portion of patients are not being seen within the target waiting t
 - Possible inefficiencies in triage or patient handling  
 
 **Impact:**  
-
 High waiting times can likely reduce patient satisfaction, increase perceived service quality issues, and create bottlenecks that affect overall throughput.
 
 ### 3. Patient Demand by Day and Hour
@@ -117,7 +115,6 @@ Patient volume varies by both day and hour, with clear peak periods. Demand is n
 - After-work visits in the evening
 
 **Impact:**  
-
 If staffing is evenly distributed across the day, the ER will be understaffed during peak hours or be overstaffed during low-demand periods. It can also lead to longer waiting times and overcrowding situations.
 
 ### 4. Patient Demographics  
@@ -131,7 +128,6 @@ If staffing is evenly distributed across the day, the ER will be understaffed du
 Patient demand is spread across multiple demographic groups, with no extreme concentration, indicating that the ER serves a broad population base rather than a niche group.
 
 **Impact:**  
-
 Operational improvements should focus on overall efficiency rather than targeting specific demographic segments.
 
 ### 5. Department Referral Patterns  
@@ -147,7 +143,6 @@ The majority of patients are treated directly in the ER without referral. This s
 - However, pressure on ER staff is increased.
 
 **Impact:**  
-
 High volumes without referral can slow down patient processing, increase waiting times, and reduce efficiency.
 Additionally, high-referral departments (GP, Orthopedics) may become bottlenecks if not properly resourced.
 
@@ -186,7 +181,6 @@ Satisfaction varies across age groups despite similar waiting times. This might 
 
 **Impact:**  
 A “one-size-fits-all” approach may not work for patient experience.
-
 
 ## Key Insights
 
