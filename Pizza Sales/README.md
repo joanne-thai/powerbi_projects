@@ -118,7 +118,7 @@ There is strong potential to introduce bundles, encourage upselling, and increas
 
 ### 4. Category Performance
 
-Revenue is relatively balanced across categories:
+While there are differences in Quantity Sold, Revenue is relatively balanced across categories:
 
 By quantity sold:
 - **Classic:** ~14.9K units (highest)  
