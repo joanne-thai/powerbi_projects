@@ -46,14 +46,19 @@ The dataset covers a full year of operations, generating about $817.9K in revenu
 
 ## Data Model
 
-The dataset is structured using a snowflake schema, separating core entities into related tables:
+<p align="center">
+  <img src="./images/data_model.png" width="500"/>
+</p>
 
-- Orders (order ID, date, time)  
-- Order Details (product, quantity, revenue)  
-- Pizzas (name, size, category)  
-- Pizza Types (ingredients, descriptions)  
+The dashboard uses a **star schema with supporting analysis tables**. The main model is centred around `factSales`, which stores order-level sales records and connects to dimension tables for date and pizza details.
 
-This structure reduces data redundancy and allows more flexible analysis across products, categories, and ingredients. 
+- **`factSales`**: central fact table containing main sales fields 
+- **`dimDate`**: date dimension used for daily, weekly, monthly, and weekend analysis
+- **`dimPizza`**: pizza dimension containing pizza name, category, size, and ingredient information
+- **`dimIngredient`** and **`bridgePizzaIngredient`**: support ingredient-level analysis by connecting pizzas to individual ingredients
+- **`PizzaPerformance`** and **`PizzaPerformance_Summary`**: supporting tables used for menu engineering and product segmentation analysis
+
+This model supports sales trend analysis, product performance comparison, ingredient impact analysis, and menu engineering segmentation while keeping the main sales table separate from descriptive product and date attributes.
 
 ## Approach
 
