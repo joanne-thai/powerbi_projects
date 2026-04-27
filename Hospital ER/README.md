@@ -69,7 +69,9 @@ Given the relatively small size of the dataset, it is kept in a single table rat
 
 ### 1. Patient Flow & Admission Status
 
-**Visuals Used:** Patient Admission Status, Total Patients KPI  
+<p align="center">
+  <img src="./images/admission_status.png" width="500"/>
+</p>
 
 - Admitted Patients: 4,612 (50.0%)  
 - Non-Admitted Patients: 4,604 (50.0%)  
@@ -83,7 +85,9 @@ This mix increases operational complexity, as different patient types require di
 
 ### 2. Waiting Time Performance
 
-**Visuals Used:** Avg Waiting Time KPI, Total Patients by Waittime Status  
+<p align="center">
+  <img src="./images/waittime_status.png" width="500"/>
+</p>
 
 - Avg Waiting Time: 35.26 minutes  
 - Within Target: ~59%   
@@ -98,7 +102,9 @@ High waiting times can likely reduce patient satisfaction, increase perceived se
 
 ### 3. Patient Demand by Day and Hour
 
-**Visuals Used:** Total Patients by Day and Hour (Heatmap & Bar Chart)  
+<p align="center">
+  <img src="./images/total_patient_day_hour.png" width="300"/>
+</p>
 
 **By Day:**
 - Highest: Monday (~1,350 patients)  
@@ -119,11 +125,15 @@ If staffing is evenly distributed across the day, the ER will be understaffed du
 
 ### 4. Patient Demographics  
 
-**Visuals:** Age Group, Gender, Race  
+<p align="center">
+  <img src="./images/patient_age_group.png" width="300"/>
+    <img src="images/patient_gender.png" width="400"/>
+      <img src="images/patient_race.png" width="400"/>
+</p>
 
 - Gender: ~51% Male, ~49% Female  
 - Largest group: Adults (30–64)  
-- Other groups relatively evenly distributed
+- Patient race is diverse, with the majority identifying as White
   
 Patient demand is spread across multiple demographic groups, with no extreme concentration, indicating that the ER serves a broad population base rather than a niche group.
 
@@ -132,7 +142,9 @@ Operational improvements should focus on overall efficiency rather than targetin
 
 ### 5. Department Referral Patterns  
 
-**Visuals:** Department Referral  
+<p align="center">
+  <img src="./images/department_referral.png" width="500"/>
+</p>
 
 - No Referral: ~5,400 patients (~58%)  
 - General Practice: ~1,800 patients  
@@ -147,7 +159,10 @@ High volumes without referral can slow down patient processing, increase waiting
 Additionally, high-referral departments (GP, Orthopedics) may become bottlenecks if not properly resourced.
 
 ### 6. Satisfaction Trends Over Time  
-**Visuals:** Satisfaction by Month  
+
+<p align="center">
+  <img src="./images/avg_sat_score_by_month.png" width="500"/>
+</p>
 
 - Range: ~5.2 to ~5.9  
 - Average: 5.47  
@@ -159,7 +174,10 @@ Patient satisfaction remains relatively stable over time. There is no evidence o
 The current processes are maintaining a baseline experience but not actively improving patient satisfaction  
 
 ### 7. Waiting Time vs Satisfaction  
-**Visuals:** Scatter Plot  
+
+<p align="center">
+  <img src="./images/avg_waittime_vs_sat_corr.png" width="500"/>
+</p>
 
 - Correlation: −0.0022
   
@@ -169,7 +187,10 @@ There is almost no relationship between waiting time and satisfaction, suggestin
 Efforts to improve satisfaction should not focus only on reducing waiting time, but also on communication, quality of care, and interaction with patients.
 
 ### 8. Performance by Age Group  
-**Visuals:** Waiting Time & Satisfaction by Age  
+
+<p align="center">
+  <img src="./images/waittime_satscore_age-group.png" width="500"/>
+</p>
 
 - Highest Satisfaction: Infants (~6.02)  
 - Lowest Satisfaction: Seniors (~5.21)  
